@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-gravity Morning Dashboard</title>
+    <meta name="description" content="Morning dashboard with weather, economic index, and calendar.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header glass-panel">
+            <div class="header-content">
+                <div class="date-display" id="currentDate">--</div>
+                <h1 class="header-title">Morning <span class="accent-text">Anti-gravity</span> Dashboard</h1>
+                <div class="time-display" id="currentTime">--:--</div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="dashboard-main">
+            <!-- Weather Widget -->
+            <section class="widget glass-panel weather-widget">
+                <h2 class="widget-title"><i data-lucide="cloud"></i> Weather</h2>
+                <div class="weather-content" id="weatherContent">
+                    <!-- Dynamic Content -->
+                </div>
+            </section>
+
+            <!-- Economic Index -->
+            <section class="widget glass-panel economy-widget">
+                <h2 class="widget-title"><i data-lucide="trending-up"></i> Economic Index</h2>
+                <div class="economy-content" id="economyContent">
+                    <!-- Dynamic Content -->
+                </div>
+            </section>
+
+            <!-- Calendar -->
+            <section class="widget glass-panel calendar-widget">
+                <h2 class="widget-title"><i data-lucide="calendar"></i> Calendar</h2>
+                <div class="calendar-content">
+                    <div class="calendar-header" id="calendarMonth">--</div>
+                    <div class="calendar-grid weekdays">
+                        <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                    </div>
+                    <div class="calendar-grid days" id="calendarDays">
+                        <!-- Dynamic Content -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Insight -->
+        <footer class="dashboard-footer glass-panel">
+            <h2 class="widget-title"><i data-lucide="lightbulb"></i> Today's Insight</h2>
+            <p class="insight-text" id="insightText">"오늘의 시장 중력은 안정적입니다. 오후 미팅에 집중하세요."</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
